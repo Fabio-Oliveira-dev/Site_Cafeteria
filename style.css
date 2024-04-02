@@ -145,3 +145,46 @@ section{
     padding: 1rem 0;
     line-height: 1.8;
 }
+
+.menu .cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.menu .cards-container .card{
+    text-align: center;
+    border: var(--border);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu .cards-container .card img{
+    height: 5rem;
+}
+
+.menu .cards-container .card h3{
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.menu .cards-container .card .preco{
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .cards-container .card .preco span{
+    font-size: 0.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .cards-container .card:hover{
+    background-color: #FFF;
+}
+
+.menu .cards-container .card:hover>*{
+    color: var(--black);
+}
